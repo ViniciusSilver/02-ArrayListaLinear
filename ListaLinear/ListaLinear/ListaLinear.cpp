@@ -104,6 +104,7 @@ void inserirElemento()
 }
 
 // deve ser implementada como resposta ao exercicio
+	// Feito por Vinicius Silvestre
 void buscarElemento()
 {
 	
