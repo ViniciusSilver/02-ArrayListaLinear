@@ -36,6 +36,7 @@ void menu()
 		cout << "4 - Buscar elemento \n";
 		cout << "5 - Inserir elemento \n";
 		cout << "6 - Sair \n\n";
+		
 
 		cout << "Opcao: ";
 		cin >> op;
@@ -83,7 +84,7 @@ void exibirElementos()
 	}
 	else {
 		cout << "Elementos: \n";
-		for (int n = 0; n < nElementos; n++) {
+		for (int n = 0; n < nElementos; n++) {	
 			cout << lista[n] << endl;
 		}
 	}
@@ -105,5 +106,23 @@ void inserirElemento()
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
+	
+	if (nElementos == 0)
+	{
+		cout << " A lista esta vazia \n";
+	}
+	else {
+		int valorUsuario;
+		cout << "Digite o elemento: ";
+		cin >> valorUsuario;
 
+		for (int n = 0; n < nElementos; n++) {
+			if (lista[n] == valorUsuario) {
+				cout << n << endl;
+			}
+			else {
+				cout << "Elemento nao encontrado." << endl;
+			}
+		}
+	}
 }
